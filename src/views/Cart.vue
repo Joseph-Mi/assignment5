@@ -7,7 +7,7 @@ const store = useStore();
 <template>
   <div class="view">
     <title>MovieMania</title>
-    <h3>Purchases</h3>
+    <h2>Purchases</h2>
   </div>
   <div class="buy">
     <div v-for="movie in store.cart">
@@ -21,5 +21,15 @@ const store = useStore();
 *{
   background-color: black;
   color: white;
+}
+
+.buy {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+img {
+  height: 250px;
 }
 </style>
