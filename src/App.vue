@@ -1,9 +1,17 @@
 <script setup></script>
 
-<template>
+<template id="app">
   <Suspense>
-    <RouterView />
+    <RouterView></RouterView>
   </Suspense>
 </template>
 
-<style scoped></style>
+<style scoped>
+*{
+  background-color: black;
+}
+#app {
+  background-color: black;
+}
+</style>
+
